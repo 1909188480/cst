@@ -129,10 +129,11 @@
   .sele_twoul>li{
   	line-height: 34px;
   	height: 34px;
+  	cursor: pointer;
   	border-bottom: 1px solid #ccc;
   }
   #wzw_yzmparent1{
-			    background: url('http://ourjs.github.io/static/2015/arrow.png') right center no-repeat; 
+			    background: url('https://ourjs.github.io/static/2015/arrow.png') right center no-repeat; 
 			    width: 120px;
 			    height: 34px;
 			    overflow: hidden;
@@ -180,7 +181,7 @@
 			    display: inline-block;		    
 			}
   #parent1{
-			    background: url('http://ourjs.github.io/static/2015/arrow.png') right center no-repeat; 
+			    background: url('https://ourjs.github.io/static/2015/arrow.png') right center no-repeat; 
 			    width: 100px;
 			    height: 34px;
 			    overflow: hidden;
@@ -188,7 +189,25 @@
 			    border-radius: 5px;
 			    font-size: 16px;			    
 			}
-			
+			#wzw_revise_quhao{
+			    width: 100%;
+			    height: 34px;
+			    overflow: hidden;
+			    border: solid 1px #ccc;
+			    border-radius: 5px;
+			    font-size: 14px;	
+			}
+			#wzw_revise_quhao select{
+			    -webkit-appearance:none;
+			    -moz-appearance:none;
+			    appearance:none;
+			    background:transparent;
+			    border:none;
+			    padding-left:10px;
+			    width: 100%;
+			    height:100%;
+			    border-radius: 5px;   
+			}
 			#parent1 select{
 			    -webkit-appearance:none;
 			    -moz-appearance:none;
@@ -205,7 +224,7 @@
 				color: #333333;
 			}
 			#parent2lang{
-			    background: url('http://ourjs.github.io/static/2015/arrow.png') right center no-repeat; 
+			    background: url('https://ourjs.github.io/static/2015/arrow.png') right center no-repeat; 
 			    width: 100px;
 			    height: 34px;
 			    overflow: hidden;
@@ -262,6 +281,7 @@
 			.jin_1{
 				height: 6px;
 				width: 0;
+				max-width: 100%;
 				display: inline-block;
 				background: #2253ab;
 				position: absolute;
@@ -287,7 +307,8 @@
     .wzw_zctk .wzw_zctk_aoto .Close {
       float: right;
       margin-right: 15px;
-      margin-top: 15px; }
+      margin-top: 15px; 
+      cursor: pointer;}
     .wzw_zctk .wzw_zctk_aoto .zctk_padding {
       height: 100%;
       width: 100%;
@@ -339,7 +360,7 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);
-  position: absolute;
+  position: fixed;
   z-index: 998;
   display: none; }
   .wzw_dltk .wzw_dltk_aoto {
@@ -354,7 +375,8 @@
     .wzw_dltk .wzw_dltk_aoto .Close {
       float: right;
       margin-right: 15px;
-      margin-top: 15px; }
+      margin-top: 15px;
+      cursor: pointer; }
     .wzw_dltk .wzw_dltk_aoto .dltk_padding {
       height: 100%;
       width: 100%;
@@ -442,7 +464,8 @@
             font-weight: 400; }
             #box .header .header_nav ul .header_nav_li2 label a {
               color: #333333;
-              text-decoration: none; }
+              text-decoration: none;
+              font-size: 16px; }
             #box .header .header_nav ul .header_nav_li2 label a:hover {
               text-decoration: none; }
         #box .header .header_nav ul .header_nav_li3 {
@@ -464,6 +487,7 @@
             color: #333333;
             margin: 20px 15px;
             line-height: 34px;
+            font-size: 16px;
             text-decoration: none; }
         #box .header .header_nav ul .header_nav_li5 {
           width: 170px;
@@ -1373,11 +1397,13 @@ a {
 	height: 200px;
 	padding: 50px 5px;
 	line-height: 50px;
+	overflow: hidden;
 }
 .wzw_box4_left_top_right_top .sp1{
 	display: block;
 	font-size: 20px;
 	color: #003366;
+	overflow: hidden;
 }
 .wzw_box4_left_top_right_top .sp2{
 	display: block;
@@ -1391,6 +1417,7 @@ a {
 	padding: 0 20px;
 	font-size: 16px;
 	text-align: right;
+	overflow: hidden;
 }
 .wzw_box4_right_top{
 	position: relative;
@@ -1407,6 +1434,7 @@ a {
 	height:155px;
 	padding: 27px 30px;
 	line-height: 50px;
+	overflow: hidden;
 }
 .wzw_box4_right_bottom_top .sp1{
 	display: block;
@@ -1470,10 +1498,394 @@ a {
 .wzw_more1{
 	margin:0 5px;
 }
+
+.wzw_jigou_page_auto{
+	width: 1200px;
+	/*border: 1px solid red;*/
+	margin:0 auto;
+	padding:16px 0;
+}
+.wzw_jigou_page_auto>ul>div>li{
+	width: 370px;
+	margin: 15px;
+	padding: 25px;
+	float: left;
+	background: #fff;
+	/*height: 615px;*/
+}
+.wzw_jigou_page_auto>ul>div>li>div{
+	padding-top: 25px;
+	background: #fff;
+	top: 0;
+}
+.clear{
+	clear: both;
+}
+.jigou_one{
+	padding-bottom: 25px;
+	border-bottom: 1px solid #ccc;
+}
+.jigou_one_left{
+	float: left;
+	width: 50%;
+}
+.jigou_one_left>img{
+	max-width: 159px;
+	height: 46px;
+	width: auto;
+}
+.jigou_one_right{
+	height: 46px;
+	float: right;
+	width: 50%;
+	line-height: 23px;
+	text-align: right;
+}
+.jigou_one_right>span{
+	display: block;
+	height: 23px;
+	font-size: 13px;
+	color: #2253ab;
+}
+.jigou_two{
+	padding: 16px 0;
+	border-bottom: 1px solid #ccc;
+}
+.jigou_two>.p{
+	display: block;
+}
+.jigou_two>.p>.span11{
+	display: inline-block;
+	width: 140px;
+	font-size: 13px;
+	color: #2253ab;
+}
+.jigou_two>.p>.span2{
+	display: inline-block;
+	width: 170px;
+}
+.jigou_two>.p>.span2>img{
+	width: 17px;
+}
+.jigou_three{
+	padding: 8px 0;
+	border-bottom: 1px solid #ccc;
+}
+.jigou_three>.p{
+	display: block;
+	margin: 8px 0;
+}
+.jigou_three>.p>.span11{
+	display: inline-block;
+	width: 140px;
+	font-size: 13px;
+	color: #2253ab;
+}
+.jigou_three>.p>.span2{
+	display: inline-block;
+	width: 170px;
+	font-size: 13px;
+	color: #999;
+}
+.jigou_four{
+	background: url(../img/banner-1.jpg);
+	background-size: 100%;
+	text-align: center;
+	height: 124px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	margin: 16px 0 8px;
+}
+.wzw_cantou{
+	text-align: left;
+	width: 286px;
+	font-size: 14px;
+	color: white;
+	border-left: 2px solid white;
+	margin: 15px;
+	text-indent: 10px;
+}
+.jigou_four img{
+	height: 35px;
+	width: auto;
+}
+.jigou_four_parent{
+	border-radius: 5px;
+}
+.jigou_four_parent_copy{
+	display: none;
+	background: #fff;
+	margin-top: 16px;
+}
+.jigou_four_cont{
+	padding:0 16px 8px;
+}
+.jigou_four_cont>.p1{
+	display: block;
+	font-size: 11px;
+	line-height: 25px;
+	margin: 8px 0;
+}
+.jigou_four_cont>.p1>.span11{
+	display: inline-block;
+	width: 130px;
+}
+.jigou_four_cont>.p1>.span2{
+	display: inline-block;
+	width: 130px;
+}
+.jigou_four_cont>.p2{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+.jigou_four_cont>.p2>a>button{
+	background: #2ba2b2;
+	color: white;
+	font-size: 11px;
+	margin: 0 auto;
+}
+.jigou_five{
+	text-align: center;
+	padding: 10px 0 0;
+	
+}
+.jigou_five>a{
+	color: #0e3e71;
+	text-decoration: none !important;
+}
+.jigou_five:focus{
+	text-decoration: none;
+}
+.jigou_five:hover{
+	text-decoration: none !important;
+}
+.jigou_five>a>img{
+	width: 18px;
+}
+.bor_xuan{
+  transform: rotate(-180deg);
+  transition: 0.5s; 
+  }
+.box_shadow{
+	box-shadow:1px 1px 15px #2ba2b2;
+}
+.wzw_jigou_btn{
+	padding: 34px 16px;
+}
+.wzw_jigou_btn_left{
+	float: left;
+	font-size: 14px;
+	color: #333;
+}
+.wzw_jigou_btn_right{
+	float: right;
+}
+.wzw_jigou_btn_right>button{
+	color: #666;
+	font-size: 14px;
+	border: 1px solid #ddd;
+	background: #f6f6f6;
+	margin: 0 7px;
+	outline: none;
+}
+.wzw_kuaixun{
+	height: 60px;
+	border-bottom: 1px solid #ddd;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+.wzw_kuaixun>.laba{
+	width: 20px;
+	top: 50%;
+	margin-top: -10px;
+	left: 20px;
+	position: absolute;
+}
+.wzw_inline_block{
+	display: inline-block;
+	position:absolute;
+	top: 0;
+	left: 0;
+	width: 1100px;
+	height: 60px;
+}
+.wzw_inline_block li{
+	line-height: 60px;
+	text-align: left;
+	font-size: 18px;
+	text-indent: 10px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	color: #003366;
+	width: 100%;
+	height: 60px;
+}
+.box_re{
+	display: inline-block;
+	width: 1100px;
+	position: relative;
+	/*border: 1px solid red;*/
+	height: 60px;
+}
+.wzw_public_tk_bg{
+	width: 100%;
+	position: fixed;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	top: 0;
+	left: 0;
+	z-index: 9998;
+	display: none;
+}
+.wzw_public_tk{
+	width: 500px;
+	z-index: 9999;
+	height: 360px;
+	position: fixed;
+	display: none;
+	background: #f5f5f5;
+	top: 50%;
+	margin-top: -180px;
+	left: 50%;
+	margin-left: -250px;
+	padding: 30px;
+}
+.wzw_prompt_tk_bg{
+	width: 100%;
+	position: fixed;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	top: 0;
+	left: 0;
+	z-index: 9998;
+	display: none;
+}
+.wzw_kuaixun_tk1{
+	display: none;
+	text-align: center;
+}
+.wzw_kuaixun_tk1 h3{
+	margin: 15px 0;
+}
+.wzw_kuaixun_tk1 p{
+	line-height: 26px;
+	color: #333;
+	font-size: 14px;
+}
+.wzw_public_close{
+	float: right;
+	cursor: pointer;
+}
+.wzw_prompt_close{
+	float: right;
+	cursor: pointer;
+}
+.wzw_revisetel{
+	display: inline-block;
+	width: 100%;
+	height: 34px;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	margin: 10px 0;
+}
+.wzw_revisetel_inp{
+	display: inline-block;
+	width: 100%;
+	height: 34px;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	margin: 10px 0;
+}
+.error_cont{
+	color: #f00;
+	/*display: none;*/
+}
+.wzw_submit_btn,.wzw_submit_btn_tel{
+	display: block;
+	background: #003366;
+	color: white;
+}
+.wzw_submit_btn_tel:hover{
+	background: #003366;
+	color: white !important;
+}
+.wzw_submit_btn:hover{
+	background: #003366;
+	color: white !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.wzw_revise_tel_tab_ul>li{
+	width:100%;
+	/*border: 1px solid red;*/
+	display: none;
+	-webkit-user-select: none;
+}
+.wzw_oldtel_next_btn{
+	background: #2ba2b2 !important;
+	color: white !important;
+}
+.wzw_oldtel_next_btn:hover{
+	color: white !important;
+}
+.wzw_form_box{
+	text-align: center;
+}
+.wzw_form_box>span{
+	font-size: 16px;
+}
+.wzw_revise_tel_tab_ul input{
+	margin: 10px 0;
+}
+.wzw_form_submit{
+	width: 100%;
+	background: #2ba2b2 !important;
+	color: white !important;
+}
 .padding_attr{
 	height: 200px;
 	padding: 20px 5px !important;
 	line-height: 30px !important;
 	overflow: hidden;
 }
+.wzw_prompt_tk{
+	width: 600px;
+	z-index: 9999;
+	height: 300px;
+	border-top: 6px solid #26afb9;
+	position: fixed;
+	display: none;
+	text-align: center;
+	background: #f5f5f5;
+	top: 50%;
+	margin-top: -150px;
+	left: 50%;
+	margin-left: -300px;
+	padding: 30px;
+}
+.wzw_prompt_tk h2{
+	margin: 20px 0;
+	font-size: 24px;
+	color: #333;
+}
+.wzw_prompt_tk h4{
+	margin: 35px 0;
+	font-size: 14px;
+	color: #333;
+}
+.wzw_prompt_tk_btn{
+	width: 280px;
+	height: 42px;
+	outline: none !important;
+	font-size: 18px !important;
+	color: white !important;
+	background: #26afb9;
+	border-radius: 20px !important;
+}
+
 /*# sourceMappingURL=style.css.map */
